@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 500px;
+}
+
+.controls {
+    padding-left: 10px;
+    width: 300px;
+    float: right;
+    padding-right: 10px;
+}
+
+.line-div {
+    float: left;
+    border: 1px solid black;
+    width: 1060px;
+    height: 500px;
+}
+
+button {
+    display: inline;
+    height: 20px;
+    width: 70px;
+}
+
+.coordinate {
+    width: 25px;
+    height: 25px;
+    border: none;
+}
+
+td {
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.control-buttons {
+    padding-top: 0px;
+    padding-left: 56px;
+}

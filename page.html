@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Curve drawing</title>
+    <script src="plotly.js"></script>
+    <script src="actions.js"></script>
+</head>
+<body>
+    <h1 align="center">Draw your personal curve!</h1>
+
+    <div class="container">
+        <div class="line-div" id="line-div-id"></div>
+
+        <div class="controls">
+
+            <div class="points-number">
+                <label style="display: inline" for="points-number-id">Points number:</label>
+                <input size="8" type="text" id="points-number-id">
+                <button onclick="changeRowsNum()">apply</button>
+            </div>
+
+            <div class="input-area">
+                <div class="points">
+                    <table style="border-collapse: collapse;" id="table-id">
+                        <tr>
+                            <th>x</th>
+                            <th>y</th>
+                        </tr>
+                        <tr>
+                            <td><input class="coordinate" type="text"></td>
+                            <td><input class="coordinate" type="text"></td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="control-buttons">
+                    <button onclick="drawCurve()">draw</button>
+                    <button onclick="clearCanvas()">clear</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
