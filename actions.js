@@ -84,6 +84,13 @@ function drawCurve() {
     var line = [{
         x: x,
         y: y,
+        marker: {
+            symbol: 'diamond',
+            color: 'red'
+        },
+        line: {
+            color: 'blue'
+        },
         type: 'scatter'
     }];
 
