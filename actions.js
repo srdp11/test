@@ -94,7 +94,26 @@ function drawCurve() {
         type: 'scatter'
     }];
 
-    Plotly.newPlot('line-div-id', line);
+    var layout = {
+        xaxis: {
+            title: 'x',
+            titlefont: {
+                family: 'Courier New, monospace',
+                size: 18,
+                color: '#7f7f7f'
+            }
+        },
+        yaxis: {
+            title: 'y',
+            titlefont: {
+                family: 'Courier New, monospace',
+                size: 18,
+                color: '#7f7f7f'
+            }
+        }
+    };
+
+    Plotly.newPlot('line-div-id', line, layout);
     console.log(x, y);
 }
 
