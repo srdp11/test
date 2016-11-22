@@ -41,12 +41,11 @@ td {
 .input-area {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     padding-top: 10px;
+    width: 87%;
 }
 
 .control-buttons {
-    padding-top: 0px;
-    padding-left: 56px;
 }
