@@ -92,5 +92,6 @@ function drawCurve() {
 }
 
 function clearCanvas() {
+    document.getElementById('line-div-id').innerHTML = "";
     Plotly.deleteTraces('line-div-id', 0);
 }
